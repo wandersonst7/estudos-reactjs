@@ -5,6 +5,7 @@ import ListRender from './components/ListRender'
 import ConditionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName'
 import CarDetails from './components/CarDetails'
+import Fragments from './components/Fragments'
 
 function App() {
 
@@ -43,6 +44,8 @@ function App() {
           <CarDetails brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
         ) )
        }
+       {/* React Fragments */}
+       <Fragments/>
     </>
   )
 }
