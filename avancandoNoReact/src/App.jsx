@@ -8,6 +8,9 @@ import CarDetails from './components/CarDetails'
 import Fragments from './components/Fragments'
 import Container from './components/Container'
 import ExecuteFunction from './components/ExecuteFunction'
+import Message from './components/Message'
+import { useState } from 'react'
+import ChangeMessage from './components/ChangeMessage'
 
 function App() {
 
@@ -23,6 +26,12 @@ function App() {
 
   const showMessage = () => {
     console.log("Evento do componente PAI")
+  }
+
+  const [message, setMessage] = useState();
+
+  const handleChangeMessage = (msg) => {
+    setMessage(msg)
   }
 
   return (
@@ -60,6 +69,11 @@ function App() {
 
        {/* Executar função */}
        <ExecuteFunction myFunction={showMessage}/> 
+
+       {/* State Lift */}
+      <Message msg={message}/>
+      <ChangeMessage handleChangeMessage={handleChangeMessage}/>
+
     </>
   )
 }
