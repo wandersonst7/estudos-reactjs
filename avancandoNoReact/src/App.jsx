@@ -11,6 +11,7 @@ import ExecuteFunction from './components/ExecuteFunction'
 import Message from './components/Message'
 import { useState } from 'react'
 import ChangeMessage from './components/ChangeMessage'
+import UserDetails from './components/UserDetails'
 
 function App() {
 
@@ -33,6 +34,14 @@ function App() {
   const handleChangeMessage = (msg) => {
     setMessage(msg)
   }
+
+  const users = [
+    {id: 1, nome: "Wanderson", idade: 22, profissao: "Programador"},
+    {id: 2, nome: "Pedro", idade: 17, profissao: "Estudante"},
+    {id: 3, nome: "Jonatas", idade: 27, profissao: "Enfermeiro"},
+    {id: 4, nome: "Mario", idade: 15, profissao: "Estudante"},
+    {id: 5, nome: "José", idade: 25, profissao: "Policial"}
+  ]
 
   return (
     <>
@@ -74,6 +83,14 @@ function App() {
       <Message msg={message}/>
       <ChangeMessage handleChangeMessage={handleChangeMessage}/>
 
+       {/* Desafio 4 */}
+
+       <h1>Desafio 4</h1>
+       {
+        users.map( (user) => {
+          return (<UserDetails key={user.id} nome={user.nome} idade={user.idade} profissao={user.profissao}/>)
+        } )
+       }
     </>
   )
 }
