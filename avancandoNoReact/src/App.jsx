@@ -6,6 +6,7 @@ import ConditionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName'
 import CarDetails from './components/CarDetails'
 import Fragments from './components/Fragments'
+import Container from './components/Container'
 
 function App() {
 
@@ -46,6 +47,11 @@ function App() {
        }
        {/* React Fragments */}
        <Fragments/>
+
+       {/* prop Children */}
+       <Container myValue={22}>
+        <p>E este é o conteúdo</p>
+       </Container>
     </>
   )
 }
