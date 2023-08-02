@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 500px;
+}
+
+h1{
+  color: red;
+}
+
+.red-title{
+  color: red;
+}
+
+.purple-title{
+  color:purple;
+}
