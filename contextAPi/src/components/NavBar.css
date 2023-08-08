@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: .5rem 1rem;
+}
+
+.active{
+    background-color: #831283;
+    color: white;
+    border-radius: 4px;
+}

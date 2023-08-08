@@ -1,0 +1,13 @@
+.changeCounter > button{
+    color: #fff;
+    background-color: #831283;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.changeCounter > button:hover{
+    background-color: #9b129b;
+}
