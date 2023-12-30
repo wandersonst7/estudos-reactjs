@@ -1,0 +1,16 @@
+.photo-item img{
+    width: 100%;
+}
+
+#home .photo-item img{
+    width: 100%;
+}
+
+
+.photo-author{
+    text-align: left;
+}
+
+.photo-author a{
+    font-weight: bold;
+}
